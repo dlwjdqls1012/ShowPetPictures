@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore.Audio.Radio
 import android.view.View
+import android.view.View.INVISIBLE
+import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ImageView
@@ -42,6 +44,16 @@ class MainActivity : AppCompatActivity() {
                 R.id.radioDog -> imgV.setImageResource(R.drawable.dog)
                 R.id.radioTiger -> imgV.setImageResource(R.drawable.tiger)
                 R.id.radioPuma -> imgV.setImageResource(R.drawable.puma)
+            }
+        }
+    }
+
+    val btnListener = OnClickListener {
+        when(it.id){
+            R.id.btnFinish -> finish()
+            R.id.btnInit -> {
+                checkStart.isChecked = false
+                linearSub.visibility = INVISIBLE
             }
         }
     }

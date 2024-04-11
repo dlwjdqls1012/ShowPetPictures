@@ -59,6 +59,19 @@
             android:layout_height="match_parent"
             android:src="@drawable/dog"
             android:scaleType="fitXY"/>
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:text="@string/btnFinish"/>
+        <Button
+            android:id="@+id/btnInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:text="@string/btnInit"/>
+
     </LinearLayout>
 
 </LinearLayout>

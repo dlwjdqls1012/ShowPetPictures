@@ -7,4 +7,6 @@
     <string name="radioTiger">호랑이</string>
     <string name="radioPuma">퓨마</string>
     <string name="btnDone">선택 완료</string>
+    <string name="btnFinish">종료</string>
+    <string name="btnInit">처음으로</string>
 </resources>
